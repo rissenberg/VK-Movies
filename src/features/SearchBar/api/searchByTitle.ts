@@ -1,7 +1,10 @@
-export const getSimilarMovies = (id: string) => ({
-	queryKey: ['getSimilarMovies'],
+export const searchByTitle = (title: string) => ({
+	queryKey: ['searchByTitle'],
 	queryFn: async ({signal}: { signal: AbortSignal }) => {
-		const url = `https://api.themoviedb.org/3/movie/${id}/similar?language=ru-RU&page=1`;
+		if (!title) {
+			return [];
+		}
+		const url = `https://api.themoviedb.org/3/search/movie?query=${title}&include_adult=false&language=ru-RU&page=1`;
 		const options = {
 			method: 'GET',
 			headers: {

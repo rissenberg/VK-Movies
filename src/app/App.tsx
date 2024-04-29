@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MainPage } from '../pages/MainPage';
 import { Routes, Route } from 'react-router-dom';
-import {Navbar} from "../widgets/Navbar/ui/Navbar";
+import {Navbar} from "../widgets/Navbar";
 import {MoviePage} from "../pages/MoviePage";
 
 const App = () => {

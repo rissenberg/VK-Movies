@@ -1,5 +1,6 @@
 import cls from './style.module.scss'
 import {Link} from "react-router-dom";
+import {SearchBar} from "../../../features/SearchBar";
 
 export const Navbar = () => {
 
@@ -8,6 +9,7 @@ export const Navbar = () => {
 			<Link to="/" className={cls.logo}>
 				Moviepoisk
 			</Link>
+			<SearchBar/>
 		</div>
 	);
 }

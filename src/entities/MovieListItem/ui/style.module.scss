@@ -1,0 +1,18 @@
+.movie_list_item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  width: calc(100% - 30px);
+  text-decoration: none;
+  color: white;
+}
+
+.movie_poster {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.movie_info {
+  flex-grow: 1;
+}

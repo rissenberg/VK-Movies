@@ -1,8 +1,13 @@
 .navbar {
   background-color: #1e2027;
-  padding: 10px 20px;
+  padding: 10px 30px;
   display: flex;
-  align-items: start;
+  align-items: center;
+  gap: 50px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
