@@ -1,5 +1,5 @@
-import {MovieCard} from "./ui/MovieCard";
+import {BigMovieCard} from "./ui/BigMovieCard";
 
 export {
-	MovieCard
+	BigMovieCard
 };

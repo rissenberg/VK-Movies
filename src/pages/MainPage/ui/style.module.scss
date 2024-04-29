@@ -1,0 +1,24 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.now_playing_title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.big_slider_container {
+  padding: 0 60px;
+}
+
+.container_title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1e2027;
+  text-align: start;
+}
+

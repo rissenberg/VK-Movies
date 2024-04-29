@@ -1,5 +1,5 @@
 const api_fetch = async ({signal}: { signal: AbortSignal }) => {
-	const url = 'https://api.themoviedb.org/3/movie/popular?language=ru-RU&page=1';
+	const url = 'https://api.themoviedb.org/3/movie/now_playing?language=ru-RU&page=1';
 	const options = {
 		method: 'GET',
 		headers: {
@@ -12,8 +12,8 @@ const api_fetch = async ({signal}: { signal: AbortSignal }) => {
 	return (await (await fetch(url, options)).json()).results;
 }
 
-export const getPopularMovies = {
-	queryKey: ['getPopularMovies'],
+export const getNowPlayingMovies = {
+	queryKey: ['getNowPlayingMovies'],
 	queryFn: api_fetch,
 	enabled: true,
 	retryDelay: 1000,

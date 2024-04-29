@@ -1,0 +1,53 @@
+.movie_details_page {
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.movie_details_content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.movie_poster {
+  margin-right: 40px;
+
+  img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+}
+
+.movie_info {
+  flex-grow: 1;
+  text-align: start;
+  font-weight: bold;
+}
+
+.movie_overview {
+  margin-bottom: 20px;
+}
+
+.error_label {
+  font-size: 22px;
+  margin-top: 150px;
+}
+
+.list_container {
+  background-color: rgba(30, 32, 39, 0.6);
+}
+
+.container_title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #1e2027;
+  text-align: start;
+}

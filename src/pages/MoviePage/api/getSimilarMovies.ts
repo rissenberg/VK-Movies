@@ -1,7 +1,7 @@
-export const getMovieInfo = (id: string) => ({
-	queryKey: ['getMovieInfo'],
+export const getSimilarMovies = (id: string) => ({
+	queryKey: ['getSimilarMovies'],
 	queryFn: async ({signal}: { signal: AbortSignal }) => {
-		const url = `https://api.themoviedb.org/3/movie/${id}?language=ru-RU&page=1`;
+		const url = `https://api.themoviedb.org/3/movie/${id}/similar?language=ru-RU&page=1`;
 		const options = {
 			method: 'GET',
 			headers: {
@@ -10,7 +10,7 @@ export const getMovieInfo = (id: string) => ({
 			}
 		};
 
-		return (await (await fetch(url, options)).json());
+		return (await (await fetch(url, options)).json()).results;
 	},
 	enabled: true,
 	retryDelay: 1000,

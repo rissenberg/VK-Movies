@@ -1,5 +1,5 @@
-import {MovieSlider} from './ui/MovieSlider';
+import {BigMovieSlider} from './ui/BigMovieSlider';
 
 export {
-	MovieSlider,
+	BigMovieSlider,
 };
